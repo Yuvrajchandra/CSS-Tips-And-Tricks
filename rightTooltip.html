@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+            .tooltip_div {
+              position: relative;
+              display: inline-block;
+            }
+
+            .tooltip_div .tooltip {
+              visibility: hidden;
+              width: 170px;
+              background-color: black;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 5px 0;
+
+              /* Positioning the tooltip */
+              position: absolute;
+              z-index: 1;
+              top: -5px;
+              left: 105%;
+            }
+
+            .tooltip_div:hover .tooltip {
+              visibility: visible;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tooltip_div">Right Tooltip
+          <span class="tooltip">This is the Tooltip text</span>
+        </div>
+    </body>
+</html>
