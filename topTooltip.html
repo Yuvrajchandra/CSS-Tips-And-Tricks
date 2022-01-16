@@ -8,24 +8,26 @@
                 text-align: center;
             }
             .tooltip_div {
+            margin-top: 100px;
             position: relative;
             display: inline-block;
             }
 
             .tooltip_div .tooltip {
-              visibility: hidden;
-              width: 170px;
-              background-color: blue;
-              color: #fff;
-              text-align: center;
-              border-radius: 6px;
-              padding: 5px 0;
+                visibility: hidden;
+                width: 170px;
+                background-color: blue;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
 
-              /* Positioning the tooltip */
-              position: absolute;
-              z-index: 1;
-              top: -5px;
-              right: 105%;
+                /* Positioning the tooltip */
+                position: absolute;
+                z-index: 1;
+                bottom: 100%;
+                left: 50%;
+                margin-left: -60px;
             }
 
             .tooltip_div:hover .tooltip {
@@ -34,7 +36,7 @@
         </style>
     </head>
     <body>
-        <div class="tooltip_div">Left Tooltip
+        <div class="tooltip_div">Top Tooltip
           <span class="tooltip">This is the Tooltip text</span>
         </div>
     </body>
